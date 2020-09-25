@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<AnchorPane
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="view.ListController">
+    <Text text = "below is the list of songs:" AnchorPane.topAnchor = "10" AnchorPane.leftAnchor = "10"></Text>
+    <ListView fx:id="listView"
+              AnchorPane.topAnchor = "30"
+              AnchorPane.leftAnchor = "10"
+              AnchorPane.rightAnchor = "300"
+              AnchorPane.bottomAnchor = "370"/>
+    <Text text = "below is the detail of the selected song:" AnchorPane.topAnchor = "140" AnchorPane.leftAnchor = "10"></Text>
+    <TextArea fx:id = "detail" prefColumnCount="10" editable="false"
+              AnchorPane.topAnchor = "160"
+              AnchorPane.leftAnchor = "10"
+              AnchorPane.rightAnchor = "300"
+              AnchorPane.bottomAnchor = "240"/>
+    <Text text = "add" AnchorPane.topAnchor = "270" AnchorPane.leftAnchor = "10"></Text>
+    <TextArea fx:id = "add_name" prefColumnCount="10" promptText="song_name"
+              AnchorPane.topAnchor = "270"
+              AnchorPane.leftAnchor = "50"
+              AnchorPane.rightAnchor = "650"
+              AnchorPane.bottomAnchor = "200"/>
+    <TextArea fx:id = "add_artist" prefColumnCount="10" promptText="song_artist"
+              AnchorPane.topAnchor = "270"
+              AnchorPane.leftAnchor = "200"
+              AnchorPane.rightAnchor = "500"
+              AnchorPane.bottomAnchor = "200"/>
+    <TextArea fx:id = "add_album" prefColumnCount="10" promptText="album"
+              AnchorPane.topAnchor = "270"
+              AnchorPane.leftAnchor = "350"
+              AnchorPane.rightAnchor = "350"
+              AnchorPane.bottomAnchor = "200"/>
+    <TextArea fx:id = "add_year" prefColumnCount="10" promptText="year"
+              AnchorPane.topAnchor = "270"
+              AnchorPane.leftAnchor = "500"
+              AnchorPane.rightAnchor = "200"
+              AnchorPane.bottomAnchor = "200"/>
+    <Text text = "edit" AnchorPane.topAnchor = "400" AnchorPane.leftAnchor = "10"></Text>
+    <TextArea fx:id = "edit_name" prefColumnCount="10"
+              AnchorPane.topAnchor = "400"
+              AnchorPane.leftAnchor = "50"
+              AnchorPane.rightAnchor = "650"
+              AnchorPane.bottomAnchor = "70"/>
+    <TextArea fx:id = "edit_artist" prefColumnCount="10"
+              AnchorPane.topAnchor = "400"
+              AnchorPane.leftAnchor = "200"
+              AnchorPane.rightAnchor = "500"
+              AnchorPane.bottomAnchor = "70"/>
+    <TextArea fx:id = "edit_album" prefColumnCount="10"
+              AnchorPane.topAnchor = "400"
+              AnchorPane.leftAnchor = "350"
+              AnchorPane.rightAnchor = "350"
+              AnchorPane.bottomAnchor = "70"/>
+    <TextArea fx:id = "edit_year" prefColumnCount="10"
+              AnchorPane.topAnchor = "400"
+              AnchorPane.leftAnchor = "500"
+              AnchorPane.rightAnchor = "200"
+              AnchorPane.bottomAnchor = "70"/>
+    <Button fx:id = "add" onAction="#addSong" text="add song"
+            AnchorPane.topAnchor = "30"
+            AnchorPane.leftAnchor = "700"
+            AnchorPane.rightAnchor = "10"/>
+    <Button fx:id = "delete" onAction="#del" text="delete song"
+            AnchorPane.topAnchor = "70"
+            AnchorPane.leftAnchor = "700"
+            AnchorPane.rightAnchor = "10"/>
+    <Button fx:id = "edit" onAction="#edit" text="edit song"
+            AnchorPane.topAnchor = "110"
+            AnchorPane.leftAnchor = "700"
+            AnchorPane.rightAnchor = "10"/>
+</AnchorPane>
